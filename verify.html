@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AWS Cognito</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+
+</head>
+<body>
+    <header>
+            <h1>Verify Your E mail</h1>
+    </header>
+
+    <div id="container">
+        <div class="form">
+            <form onsubmit= "return false;">
+                <input type="text" id="code_username" placeholder="Username">
+                <input type="text" id="code_code" placeholder="Verification Code">
+                <button type="submit" onclick="validate();">Verify</button>
+             </form>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+
+    <script src="aws-cognito-sdk.min.js"></script>
+    <script src="amazon-cognito-identity.min.js"></script>
+
+    
+</body>
+</html>
